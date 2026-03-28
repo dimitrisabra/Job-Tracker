@@ -1,0 +1,1516 @@
+{
+  "users": [
+    {
+      "_id": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "name": "Admin User",
+      "email": "admin@jobtracker.com",
+      "password": "$2a$12$Q3q7qvtc/vcPLrHtg9889Ofe964d8bfOkZjy4GwL2U7fOsfAhnqRO",
+      "role": "admin",
+      "status": "active",
+      "avatar": "",
+      "lastLogin": "2026-03-28T20:34:00.519Z",
+      "createdAt": "2025-11-28T19:55:52.934Z",
+      "updatedAt": "2026-03-28T20:34:00.519Z"
+    },
+    {
+      "_id": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "name": "Alex Johnson",
+      "email": "alex@example.com",
+      "password": "$2a$12$cLyjC89b53SXdq3Rh.L7muA31k0.3IKnArxBls9U2J2S.pCeVRaQC",
+      "role": "user",
+      "status": "active",
+      "avatar": "",
+      "lastLogin": "2026-03-28T20:53:40.387Z",
+      "createdAt": "2026-01-12T19:55:53.120Z",
+      "updatedAt": "2026-03-28T20:53:40.387Z"
+    },
+    {
+      "_id": "94e90bb8-9e1a-4094-86aa-baabbaad7d64",
+      "name": "Sarah Chen",
+      "email": "sarah@example.com",
+      "password": "$2a$12$np5WiNUlOMxX9wVTYY8nme5tD1K1AT074O1pHoJNCMCuRqw7eosPm",
+      "role": "user",
+      "status": "active",
+      "avatar": "",
+      "lastLogin": "2026-03-28T20:34:59.031Z",
+      "createdAt": "2026-02-14T19:55:53.304Z",
+      "updatedAt": "2026-03-28T20:34:59.031Z"
+    }
+  ],
+  "jobs": [
+    {
+      "_id": "1fb96e20-15d5-4d7c-96b6-cd31f0f5851d",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Senior Frontend Engineer",
+      "company": "Stripe",
+      "status": "Interview",
+      "location": "Remote",
+      "salary": "$150k-$180k",
+      "notes": "Great culture, strong eng team. Reached out via LinkedIn. Need to review their payment APIs.",
+      "priority": "High",
+      "coverLetter": "",
+      "dateApplied": "2025-10-09T18:55:53.304Z",
+      "interviewDate": "2026-03-31T18:55:53.304Z",
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Interview",
+          "changedAt": "2025-10-09T18:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2025-10-09T18:55:53.304Z",
+      "updatedAt": "2025-10-09T18:55:53.304Z"
+    },
+    {
+      "_id": "4e507db1-9bb4-49af-9c5c-99c034bc94cf",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Full Stack Developer",
+      "company": "Linear",
+      "status": "Applied",
+      "location": "San Francisco, CA",
+      "salary": "$130k-$160k",
+      "notes": "Product-led company. Love their UI. Applied through their careers page.",
+      "priority": "Medium",
+      "coverLetter": "",
+      "dateApplied": "2025-10-24T18:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Applied",
+          "changedAt": "2025-10-24T18:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2025-10-24T18:55:53.304Z",
+      "updatedAt": "2025-10-24T18:55:53.304Z"
+    },
+    {
+      "_id": "836546f8-c2f0-40b7-87e1-d613af062151",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "React Developer",
+      "company": "Vercel",
+      "status": "Offer",
+      "location": "Remote",
+      "salary": "$140k-$170k",
+      "notes": "Offer received! Need to compare with other opportunities. Great team culture.",
+      "priority": "Low",
+      "coverLetter": "",
+      "dateApplied": "2025-11-08T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Offer",
+          "changedAt": "2025-11-08T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2025-11-08T19:55:53.304Z",
+      "updatedAt": "2025-11-08T19:55:53.304Z"
+    },
+    {
+      "_id": "f38d3a7f-468d-4de1-87c7-32708dc5521a",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Software Engineer",
+      "company": "Notion",
+      "status": "Rejected",
+      "location": "New York, NY",
+      "salary": "$120k-$150k",
+      "notes": "Rejected after technical round. Need to work on system design skills.",
+      "priority": "High",
+      "coverLetter": "",
+      "dateApplied": "2025-11-28T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Rejected",
+          "changedAt": "2025-11-28T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2025-11-28T19:55:53.304Z",
+      "updatedAt": "2025-11-28T19:55:53.304Z"
+    },
+    {
+      "_id": "19e516c0-bff6-46ea-aa40-5fdb57b84620",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Frontend Lead",
+      "company": "Figma",
+      "status": "Interview",
+      "location": "San Francisco, CA",
+      "salary": "$160k-$200k",
+      "notes": "Second round scheduled for next week. Prep design system questions.",
+      "priority": "Medium",
+      "coverLetter": "",
+      "dateApplied": "2025-12-23T19:55:53.304Z",
+      "interviewDate": "2026-04-04T18:55:53.304Z",
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Interview",
+          "changedAt": "2025-12-23T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2025-12-23T19:55:53.304Z",
+      "updatedAt": "2025-12-23T19:55:53.304Z"
+    },
+    {
+      "_id": "86a04ebb-b14f-48c9-a3cc-7e9d8df9f9d2",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "UI Engineer",
+      "company": "Loom",
+      "status": "Applied",
+      "location": "Remote",
+      "salary": "$110k-$140k",
+      "notes": "",
+      "priority": "Low",
+      "coverLetter": "",
+      "dateApplied": "2026-01-05T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Applied",
+          "changedAt": "2026-01-05T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-01-05T19:55:53.304Z",
+      "updatedAt": "2026-01-05T19:55:53.304Z"
+    },
+    {
+      "_id": "c114858a-a812-4026-9245-64c58f316c17",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Software Engineer II",
+      "company": "Airbnb",
+      "status": "Applied",
+      "location": "San Francisco, CA",
+      "salary": "$150k+",
+      "notes": "Applied through referral from an old colleague.",
+      "priority": "High",
+      "coverLetter": "",
+      "dateApplied": "2026-01-23T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Applied",
+          "changedAt": "2026-01-23T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-01-23T19:55:53.304Z",
+      "updatedAt": "2026-01-23T19:55:53.304Z"
+    },
+    {
+      "_id": "6dfbcc60-29a1-4cb2-b322-c2a0aff0a578",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Principal Engineer",
+      "company": "Shopify",
+      "status": "Rejected",
+      "location": "Remote",
+      "salary": "$180k-$220k",
+      "notes": "Overqualified according to their feedback.",
+      "priority": "Medium",
+      "coverLetter": "",
+      "dateApplied": "2026-02-08T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Rejected",
+          "changedAt": "2026-02-08T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-02-08T19:55:53.304Z",
+      "updatedAt": "2026-02-08T19:55:53.304Z"
+    },
+    {
+      "_id": "e4fae847-ee14-4c1b-9b72-58def73504cb",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "React Native Developer",
+      "company": "Discord",
+      "status": "Interview",
+      "location": "Remote",
+      "salary": "$130k-$160k",
+      "notes": "Mobile-focused role. Prepare React Native performance questions.",
+      "priority": "Low",
+      "coverLetter": "",
+      "dateApplied": "2026-03-01T19:55:53.304Z",
+      "interviewDate": "2026-04-08T18:55:53.304Z",
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Interview",
+          "changedAt": "2026-03-01T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-03-01T19:55:53.304Z",
+      "updatedAt": "2026-03-01T19:55:53.304Z"
+    },
+    {
+      "_id": "c8c6373c-2a48-4d73-9d77-bb174328cd3f",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "jobPosting": null,
+      "jobTitle": "Staff Engineer",
+      "company": "Atlassian",
+      "status": "Applied",
+      "location": "New York, NY",
+      "salary": "$170k-$200k",
+      "notes": "Submitted via the internal referral portal.",
+      "priority": "High",
+      "coverLetter": "",
+      "dateApplied": "2026-03-16T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Applied",
+          "changedAt": "2026-03-16T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-03-16T19:55:53.304Z",
+      "updatedAt": "2026-03-16T19:55:53.304Z"
+    },
+    {
+      "_id": "c1e70fca-df3d-480f-8fc0-87cc6f73f662",
+      "user": "94e90bb8-9e1a-4094-86aa-baabbaad7d64",
+      "jobPosting": null,
+      "jobTitle": "VP of Engineering",
+      "company": "TechCorp",
+      "status": "Rejected",
+      "location": "NYC",
+      "salary": "$250k+",
+      "notes": "Executive role, checking for culture fit.",
+      "priority": "Medium",
+      "coverLetter": "",
+      "dateApplied": "2026-03-22T00:00:00.000Z",
+      "interviewDate": "2026-04-03T00:00:00.000Z",
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Interview",
+          "changedAt": "2026-03-22T19:55:53.304Z",
+          "note": ""
+        },
+        {
+          "status": "Rejected",
+          "changedAt": "2026-03-28T20:34:24.781Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-03-22T19:55:53.304Z",
+      "updatedAt": "2026-03-28T20:34:24.782Z",
+      "jobUrl": ""
+    },
+    {
+      "_id": "b8a54491-d708-4674-8163-466d6315ef40",
+      "user": "94e90bb8-9e1a-4094-86aa-baabbaad7d64",
+      "jobPosting": null,
+      "jobTitle": "CTO",
+      "company": "StartupXYZ",
+      "status": "Applied",
+      "location": "Remote",
+      "salary": "Equity-based",
+      "notes": "Interesting seed-stage company.",
+      "priority": "Medium",
+      "coverLetter": "",
+      "dateApplied": "2026-03-13T19:55:53.304Z",
+      "interviewDate": null,
+      "contactName": "",
+      "contactEmail": "",
+      "tags": [],
+      "statusHistory": [
+        {
+          "status": "Applied",
+          "changedAt": "2026-03-13T19:55:53.304Z",
+          "note": ""
+        }
+      ],
+      "createdAt": "2026-03-13T19:55:53.304Z",
+      "updatedAt": "2026-03-13T19:55:53.304Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "_id": "6abbc029-0f24-4bed-b173-c6a657d15c29",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "SIGNUP",
+      "description": "Account created",
+      "meta": {},
+      "ipAddress": "",
+      "createdAt": "2026-01-12T19:55:53.304Z",
+      "updatedAt": "2026-01-12T19:55:53.304Z"
+    },
+    {
+      "_id": "0a0f9bbb-2deb-4a27-89ad-72647790c9ea",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "",
+      "createdAt": "2026-01-13T19:55:53.304Z",
+      "updatedAt": "2026-01-13T19:55:53.304Z"
+    },
+    {
+      "_id": "08af65f8-72c6-4854-9332-381c40e43752",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "JOB_CREATED",
+      "description": "Applied to Senior Frontend Engineer at Stripe",
+      "meta": {},
+      "ipAddress": "",
+      "createdAt": "2026-01-17T19:55:53.304Z",
+      "updatedAt": "2026-01-17T19:55:53.304Z"
+    },
+    {
+      "_id": "b7cbf1d3-a9ae-4e1b-8279-f3615bd14e75",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "STATUS_CHANGED",
+      "description": "Frontend Lead at Figma: Applied -> Interview",
+      "meta": {},
+      "ipAddress": "",
+      "createdAt": "2026-03-18T19:55:53.304Z",
+      "updatedAt": "2026-03-18T19:55:53.304Z"
+    },
+    {
+      "_id": "3fe5ea9f-b7e4-4ca8-a900-e4d4c9151a0c",
+      "user": "94e90bb8-9e1a-4094-86aa-baabbaad7d64",
+      "action": "SIGNUP",
+      "description": "Account created",
+      "meta": {},
+      "ipAddress": "",
+      "createdAt": "2026-02-14T19:55:53.304Z",
+      "updatedAt": "2026-02-14T19:55:53.304Z"
+    },
+    {
+      "_id": "0404052a-158f-4b4d-8750-11062a7e474b",
+      "user": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "action": "POSTING_CREATED",
+      "description": "Admin posted job: Senior Frontend Engineer at Stripe",
+      "meta": {},
+      "ipAddress": "",
+      "createdAt": "2026-03-26T19:55:53.304Z",
+      "updatedAt": "2026-03-26T19:55:53.304Z"
+    },
+    {
+      "_id": "9a7c7776-13d2-4163-a772-9ff7bc3d818a",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::ffff:127.0.0.1",
+      "createdAt": "2026-03-28T19:56:27.098Z",
+      "updatedAt": "2026-03-28T19:56:27.098Z"
+    },
+    {
+      "_id": "89e264df-1417-4d89-9edd-f020743b5e8a",
+      "user": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::ffff:127.0.0.1",
+      "createdAt": "2026-03-28T19:56:27.295Z",
+      "updatedAt": "2026-03-28T19:56:27.295Z"
+    },
+    {
+      "_id": "3bb5b376-28bd-4ad2-9c60-7236e541233a",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:02:12.239Z",
+      "updatedAt": "2026-03-28T20:02:12.239Z"
+    },
+    {
+      "_id": "3aa18eb9-a370-4a54-a83c-ac1177f27977",
+      "user": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:02:50.690Z",
+      "updatedAt": "2026-03-28T20:02:50.690Z"
+    },
+    {
+      "_id": "4d89dd49-bd8b-40ef-bedc-650d5963abb7",
+      "user": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::ffff:127.0.0.1",
+      "createdAt": "2026-03-28T20:07:47.429Z",
+      "updatedAt": "2026-03-28T20:07:47.429Z"
+    },
+    {
+      "_id": "c12a4654-27fd-4c91-981d-00a44f32bcb3",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:32:03.252Z",
+      "updatedAt": "2026-03-28T20:32:03.252Z"
+    },
+    {
+      "_id": "2ff4627f-94e3-4594-8e86-634987cadca2",
+      "user": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:34:00.520Z",
+      "updatedAt": "2026-03-28T20:34:00.520Z"
+    },
+    {
+      "_id": "785dce66-c592-475d-9974-0bc4792975ba",
+      "user": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "action": "ADMIN_JOB_UPDATED",
+      "description": "Admin updated VP of Engineering at TechCorp for sarah@example.com",
+      "meta": {
+        "targetUserId": "94e90bb8-9e1a-4094-86aa-baabbaad7d64",
+        "jobId": "c1e70fca-df3d-480f-8fc0-87cc6f73f662"
+      },
+      "ipAddress": "",
+      "createdAt": "2026-03-28T20:34:24.784Z",
+      "updatedAt": "2026-03-28T20:34:24.784Z"
+    },
+    {
+      "_id": "101e3f15-51fd-496c-a587-3e4812758435",
+      "user": "94e90bb8-9e1a-4094-86aa-baabbaad7d64",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:34:59.034Z",
+      "updatedAt": "2026-03-28T20:34:59.034Z"
+    },
+    {
+      "_id": "9d877d14-06a4-450f-b4e4-24ed134f014b",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:51:48.453Z",
+      "updatedAt": "2026-03-28T20:51:48.453Z"
+    },
+    {
+      "_id": "23af512f-1cef-4636-a7b8-3996cc1efe81",
+      "user": "8bc75dd4-c83b-49fc-ba71-d810ab1bfedb",
+      "action": "LOGIN",
+      "description": "User logged in",
+      "meta": {},
+      "ipAddress": "::1",
+      "createdAt": "2026-03-28T20:53:40.388Z",
+      "updatedAt": "2026-03-28T20:53:40.388Z"
+    }
+  ],
+  "jobPostings": [
+    {
+      "_id": "7613f3d5-da32-4e68-ab7b-e72f63673511",
+      "title": "Senior Frontend Engineer",
+      "company": "Stripe",
+      "companyLogo": "",
+      "description": "Build polished product surfaces for millions of businesses using Stripe.",
+      "requirements": [
+        "5+ years of frontend experience",
+        "Strong React and TypeScript skills",
+        "Experience working with design systems"
+      ],
+      "responsibilities": [
+        "Ship customer-facing features",
+        "Collaborate with design and backend teams",
+        "Improve performance and accessibility"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$160k-$210k",
+      "salaryMin": 160000,
+      "salaryMax": 210000,
+      "tags": [
+        "react",
+        "typescript",
+        "payments"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-18T18:55:53.304Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 1,
+      "createdAt": "2026-03-26T19:55:53.304Z",
+      "updatedAt": "2026-03-28T19:56:27.308Z"
+    },
+    {
+      "_id": "13964cf6-05a3-4794-aef0-9c5b7791b389",
+      "title": "Product Engineer",
+      "company": "Linear",
+      "companyLogo": "",
+      "description": "Create fast, thoughtful workflows for modern product teams.",
+      "requirements": [
+        "Strong product sense",
+        "React and GraphQL experience"
+      ],
+      "responsibilities": [
+        "Build delightful interfaces",
+        "Work closely with founders",
+        "Own features from concept to launch"
+      ],
+      "location": "San Francisco, CA",
+      "type": "Hybrid",
+      "salary": "$145k-$185k",
+      "salaryMin": 145000,
+      "salaryMax": 185000,
+      "tags": [
+        "react",
+        "graphql",
+        "ux"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-25T18:55:53.304Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-23T19:55:53.304Z",
+      "updatedAt": "2026-03-23T19:55:53.304Z"
+    },
+    {
+      "_id": "6bde75ba-ca14-40b3-938d-20a0d3244f95",
+      "title": "React Native Engineer",
+      "company": "Discord",
+      "companyLogo": "",
+      "description": "Help shape mobile experiences for online communities around the world.",
+      "requirements": [
+        "Production React Native experience",
+        "Strong performance mindset"
+      ],
+      "responsibilities": [
+        "Build and maintain mobile features",
+        "Partner with product and design",
+        "Improve release quality"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$135k-$175k",
+      "salaryMin": 135000,
+      "salaryMax": 175000,
+      "tags": [
+        "react-native",
+        "mobile",
+        "performance"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-11T18:55:53.304Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-20T19:55:53.304Z",
+      "updatedAt": "2026-03-20T19:55:53.304Z"
+    },
+    {
+      "_id": "07392ddd-a4fc-42b4-9082-b7245bf21d61",
+      "title": "Design Systems Lead",
+      "company": "Figma",
+      "companyLogo": "",
+      "description": "Lead the evolution of a multi-platform design system used across the product.",
+      "requirements": [
+        "Deep design systems experience",
+        "People leadership experience"
+      ],
+      "responsibilities": [
+        "Guide component architecture",
+        "Mentor engineers",
+        "Partner closely with design leadership"
+      ],
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "salary": "$180k-$230k",
+      "salaryMin": 180000,
+      "salaryMax": 230000,
+      "tags": [
+        "design-systems",
+        "leadership",
+        "frontend"
+      ],
+      "experience": "Lead",
+      "deadline": "2026-04-22T18:55:53.304Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-17T19:55:53.304Z",
+      "updatedAt": "2026-03-17T19:55:53.304Z"
+    },
+    {
+      "_id": "049a8a65-e698-4de4-b88d-c633f629233f",
+      "title": "Frontend Contractor",
+      "company": "Loom",
+      "companyLogo": "",
+      "description": "Help the team deliver a polished campaign microsite and analytics dashboards.",
+      "requirements": [
+        "Strong React skills",
+        "Ability to ship quickly"
+      ],
+      "responsibilities": [
+        "Implement new pages",
+        "Work with design assets",
+        "Polish responsive behavior"
+      ],
+      "location": "Remote",
+      "type": "Contract",
+      "salary": "$85-$110/hr",
+      "salaryMin": null,
+      "salaryMax": null,
+      "tags": [
+        "react",
+        "css",
+        "contract"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-07T18:55:53.304Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 2,
+      "createdAt": "2026-03-14T19:55:53.304Z",
+      "updatedAt": "2026-03-28T20:32:45.242Z"
+    },
+    {
+      "_id": "f04f58c4-60f2-4870-a6d5-36c1d90990a8",
+      "title": "Frontend Internship",
+      "company": "Notion",
+      "companyLogo": "",
+      "description": "Join the product engineering team and ship meaningful UI improvements.",
+      "requirements": [
+        "Strong fundamentals",
+        "Portfolio or side projects"
+      ],
+      "responsibilities": [
+        "Build small product features",
+        "Write tests",
+        "Learn from senior teammates"
+      ],
+      "location": "New York, NY",
+      "type": "Internship",
+      "salary": "$35-$45/hr",
+      "salaryMin": null,
+      "salaryMax": null,
+      "tags": [
+        "internship",
+        "react",
+        "product"
+      ],
+      "experience": "Entry Level",
+      "deadline": "2026-04-27T18:55:53.304Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-11T19:55:53.304Z",
+      "updatedAt": "2026-03-11T19:55:53.304Z"
+    },
+    {
+      "_id": "16f83e4c-e200-4661-b44e-9c356454f79a",
+      "title": "Staff Frontend Engineer",
+      "company": "Airbnb",
+      "companyLogo": "",
+      "description": "Shape booking, host, and traveler experiences across a high-traffic frontend platform.",
+      "requirements": [
+        "Strong React architecture skills",
+        "Experience at scale",
+        "Excellent product intuition"
+      ],
+      "responsibilities": [
+        "Lead frontend initiatives",
+        "Drive technical direction",
+        "Partner across design, product, and backend"
+      ],
+      "location": "San Francisco, CA",
+      "type": "Hybrid",
+      "salary": "$185k-$240k",
+      "salaryMin": 185000,
+      "salaryMax": 240000,
+      "tags": [
+        "react",
+        "platform",
+        "travel"
+      ],
+      "experience": "Lead",
+      "deadline": "2026-04-15T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-14T20:07:32.532Z",
+      "updatedAt": "2026-03-14T20:07:32.532Z"
+    },
+    {
+      "_id": "067f85c4-3270-4e91-99aa-94c4c9e830e0",
+      "title": "Growth Frontend Engineer",
+      "company": "Canva",
+      "companyLogo": "",
+      "description": "Build fast experiments and polished acquisition flows that help more users discover Canva.",
+      "requirements": [
+        "React expertise",
+        "Experimentation experience",
+        "Strong UI craftsmanship"
+      ],
+      "responsibilities": [
+        "Ship growth experiments",
+        "Optimize conversion funnels",
+        "Collaborate with marketing and data teams"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$140k-$185k",
+      "salaryMin": 140000,
+      "salaryMax": 185000,
+      "tags": [
+        "growth",
+        "react",
+        "experimentation"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-23T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-12T20:07:32.532Z",
+      "updatedAt": "2026-03-12T20:07:32.532Z"
+    },
+    {
+      "_id": "56fa2a71-f6e3-4dec-916d-460194fa782a",
+      "title": "Frontend Platform Engineer",
+      "company": "Atlassian",
+      "companyLogo": "",
+      "description": "Improve frontend tooling, shared libraries, and developer workflows used across product teams.",
+      "requirements": [
+        "TypeScript and tooling experience",
+        "Interest in DX",
+        "Strong communication skills"
+      ],
+      "responsibilities": [
+        "Own shared platform pieces",
+        "Improve build performance",
+        "Guide best practices"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$165k-$210k",
+      "salaryMin": 165000,
+      "salaryMax": 210000,
+      "tags": [
+        "platform",
+        "typescript",
+        "tooling"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-17T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-10T20:07:32.532Z",
+      "updatedAt": "2026-03-10T20:07:32.532Z"
+    },
+    {
+      "_id": "c2c4cadd-341d-4f85-be75-72100351017c",
+      "title": "Senior UI Engineer",
+      "company": "Framer",
+      "companyLogo": "",
+      "description": "Design and ship elegant interfaces for a fast-moving visual site builder.",
+      "requirements": [
+        "Excellent visual polish",
+        "Strong React skills",
+        "Motion and animation experience"
+      ],
+      "responsibilities": [
+        "Build premium UI patterns",
+        "Work closely with design",
+        "Maintain component quality"
+      ],
+      "location": "Amsterdam / Remote",
+      "type": "Remote",
+      "salary": "$135k-$175k",
+      "salaryMin": 135000,
+      "salaryMax": 175000,
+      "tags": [
+        "ui",
+        "motion",
+        "react"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-13T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-08T20:07:32.532Z",
+      "updatedAt": "2026-03-08T20:07:32.532Z"
+    },
+    {
+      "_id": "c139b38c-c506-4d2c-a1a6-dad32e1d5e89",
+      "title": "Design Systems Engineer",
+      "company": "GitHub",
+      "companyLogo": "",
+      "description": "Help evolve a robust component system that powers developer experiences across GitHub.",
+      "requirements": [
+        "Component library experience",
+        "Accessibility focus",
+        "Strong cross-team collaboration"
+      ],
+      "responsibilities": [
+        "Build primitives",
+        "Document patterns",
+        "Improve consistency across surfaces"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$155k-$205k",
+      "salaryMin": 155000,
+      "salaryMax": 205000,
+      "tags": [
+        "design-systems",
+        "accessibility",
+        "react"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-21T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-06T20:07:32.532Z",
+      "updatedAt": "2026-03-06T20:07:32.532Z"
+    },
+    {
+      "_id": "46afc5a2-c7e1-4474-8bc3-859695c78a61",
+      "title": "Frontend Engineer, Commerce",
+      "company": "Shopify",
+      "companyLogo": "",
+      "description": "Create merchant-facing tools and workflows that make commerce simpler and faster.",
+      "requirements": [
+        "Product engineering experience",
+        "React and GraphQL",
+        "Strong collaboration skills"
+      ],
+      "responsibilities": [
+        "Ship merchant workflows",
+        "Improve UI performance",
+        "Build maintainable product surfaces"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$145k-$190k",
+      "salaryMin": 145000,
+      "salaryMax": 190000,
+      "tags": [
+        "commerce",
+        "graphql",
+        "react"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-14T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-04T20:07:32.532Z",
+      "updatedAt": "2026-03-04T20:07:32.532Z"
+    },
+    {
+      "_id": "4fa34447-de9e-445f-ab99-0cbbbd241b79",
+      "title": "Senior Frontend Developer",
+      "company": "Webflow",
+      "companyLogo": "",
+      "description": "Build high-quality editing and publishing experiences for one of the web’s most popular site builders.",
+      "requirements": [
+        "Advanced React and TypeScript",
+        "Strong UX sense",
+        "Experience with rich editors"
+      ],
+      "responsibilities": [
+        "Build editor flows",
+        "Ship performant UI",
+        "Collaborate on product strategy"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$150k-$195k",
+      "salaryMin": 150000,
+      "salaryMax": 195000,
+      "tags": [
+        "react",
+        "editor",
+        "typescript"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-19T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-03-02T20:07:32.532Z",
+      "updatedAt": "2026-03-02T20:07:32.532Z"
+    },
+    {
+      "_id": "73dbd763-3633-445b-b984-c6dd61b54217",
+      "title": "Frontend Engineer, Video",
+      "company": "Miro",
+      "companyLogo": "",
+      "description": "Create collaborative visual experiences for distributed teams working in real time.",
+      "requirements": [
+        "Strong frontend foundations",
+        "Real-time collaboration interest",
+        "Performance optimization skills"
+      ],
+      "responsibilities": [
+        "Ship collaboration features",
+        "Improve canvas UX",
+        "Support large-scale frontend architecture"
+      ],
+      "location": "Berlin / Remote",
+      "type": "Hybrid",
+      "salary": "$130k-$170k",
+      "salaryMin": 130000,
+      "salaryMax": 170000,
+      "tags": [
+        "collaboration",
+        "performance",
+        "react"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-16T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-28T20:07:32.532Z",
+      "updatedAt": "2026-02-28T20:07:32.532Z"
+    },
+    {
+      "_id": "3795ae82-ae95-4ffa-9765-a505869feff4",
+      "title": "Senior Product Engineer",
+      "company": "Dropbox",
+      "companyLogo": "",
+      "description": "Build polished product experiences across collaboration and file workflows.",
+      "requirements": [
+        "Product engineering experience",
+        "React and experimentation skills",
+        "Good systems thinking"
+      ],
+      "responsibilities": [
+        "Own product features",
+        "Improve conversion and engagement",
+        "Partner with PM and design"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$150k-$200k",
+      "salaryMin": 150000,
+      "salaryMax": 200000,
+      "tags": [
+        "product",
+        "react",
+        "collaboration"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-26T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-26T20:07:32.532Z",
+      "updatedAt": "2026-02-26T20:07:32.532Z"
+    },
+    {
+      "_id": "3da43f30-1f6b-4971-a30c-528811673dd0",
+      "title": "Frontend Engineer, AI Products",
+      "company": "OpenAI",
+      "companyLogo": "",
+      "description": "Help craft intuitive interfaces for AI-powered workflows used by businesses and developers.",
+      "requirements": [
+        "Excellent UI engineering fundamentals",
+        "Strong product taste",
+        "Interest in AI products"
+      ],
+      "responsibilities": [
+        "Build AI interaction patterns",
+        "Collaborate across product and research",
+        "Ship fast without losing quality"
+      ],
+      "location": "San Francisco, CA",
+      "type": "Hybrid",
+      "salary": "$180k-$245k",
+      "salaryMin": 180000,
+      "salaryMax": 245000,
+      "tags": [
+        "ai",
+        "frontend",
+        "product"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-12T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-24T20:07:32.532Z",
+      "updatedAt": "2026-02-24T20:07:32.532Z"
+    },
+    {
+      "_id": "41c4be5f-423a-4220-bb84-e24318f2a70e",
+      "title": "Senior Full Stack Engineer",
+      "company": "Mercury",
+      "companyLogo": "",
+      "description": "Build customer-facing banking and finance experiences with a strong frontend emphasis.",
+      "requirements": [
+        "Frontend-heavy full-stack experience",
+        "React and APIs",
+        "High product ownership"
+      ],
+      "responsibilities": [
+        "Ship end-to-end features",
+        "Improve onboarding flows",
+        "Raise quality across the stack"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$165k-$215k",
+      "salaryMin": 165000,
+      "salaryMax": 215000,
+      "tags": [
+        "fintech",
+        "react",
+        "full-stack"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-20T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-22T20:07:32.532Z",
+      "updatedAt": "2026-02-22T20:07:32.532Z"
+    },
+    {
+      "_id": "731f7562-33d2-4ed0-9a4e-7344e89c3bfb",
+      "title": "Frontend Engineer, Developer Tools",
+      "company": "Postman",
+      "companyLogo": "",
+      "description": "Improve the developer experience around testing, documentation, and API collaboration.",
+      "requirements": [
+        "Modern frontend app experience",
+        "Strong TypeScript",
+        "Developer empathy"
+      ],
+      "responsibilities": [
+        "Build developer tooling UIs",
+        "Improve workflows",
+        "Design clear product interactions"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$140k-$185k",
+      "salaryMin": 140000,
+      "salaryMax": 185000,
+      "tags": [
+        "developer-tools",
+        "typescript",
+        "api"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-24T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-20T20:07:32.532Z",
+      "updatedAt": "2026-02-20T20:07:32.532Z"
+    },
+    {
+      "_id": "882cd9a0-a291-4fef-a50c-1c87685efd43",
+      "title": "Lead Frontend Engineer",
+      "company": "Calendly",
+      "companyLogo": "",
+      "description": "Lead the frontend roadmap for scheduling products used by millions of professionals.",
+      "requirements": [
+        "Leadership experience",
+        "Excellent React architecture skills",
+        "Strong delivery track record"
+      ],
+      "responsibilities": [
+        "Lead frontend strategy",
+        "Mentor teammates",
+        "Ship critical customer workflows"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$175k-$225k",
+      "salaryMin": 175000,
+      "salaryMax": 225000,
+      "tags": [
+        "leadership",
+        "react",
+        "saas"
+      ],
+      "experience": "Lead",
+      "deadline": "2026-04-10T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-18T20:07:32.532Z",
+      "updatedAt": "2026-02-18T20:07:32.532Z"
+    },
+    {
+      "_id": "e90aa3f5-b335-46ba-a610-d76a18b5580c",
+      "title": "Frontend Engineer, Mobile Web",
+      "company": "Pinterest",
+      "companyLogo": "",
+      "description": "Craft fast, beautiful mobile web experiences focused on discovery and inspiration.",
+      "requirements": [
+        "Web performance expertise",
+        "Responsive UI experience",
+        "Solid React skills"
+      ],
+      "responsibilities": [
+        "Improve mobile browsing flows",
+        "Optimize rendering performance",
+        "Experiment with new interactions"
+      ],
+      "location": "San Francisco, CA",
+      "type": "Hybrid",
+      "salary": "$150k-$195k",
+      "salaryMin": 150000,
+      "salaryMax": 195000,
+      "tags": [
+        "mobile-web",
+        "performance",
+        "react"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-15T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-16T20:07:32.532Z",
+      "updatedAt": "2026-02-16T20:07:32.532Z"
+    },
+    {
+      "_id": "5c19645f-f18e-4ab0-aac9-afe0c07c907e",
+      "title": "Frontend Engineer, Data Visualization",
+      "company": "Datadog",
+      "companyLogo": "",
+      "description": "Build rich dashboards and investigative workflows for engineering teams.",
+      "requirements": [
+        "Strong JavaScript fundamentals",
+        "Charting or data visualization experience",
+        "Performance mindset"
+      ],
+      "responsibilities": [
+        "Create dashboard interfaces",
+        "Improve observability workflows",
+        "Handle complex UI state"
+      ],
+      "location": "New York, NY",
+      "type": "Full-time",
+      "salary": "$155k-$205k",
+      "salaryMin": 155000,
+      "salaryMax": 205000,
+      "tags": [
+        "data-viz",
+        "react",
+        "observability"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-22T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-14T20:07:32.532Z",
+      "updatedAt": "2026-02-14T20:07:32.532Z"
+    },
+    {
+      "_id": "2c299463-78de-44a0-9f8f-0ae3d239bd58",
+      "title": "Senior Frontend Engineer, Security",
+      "company": "Cloudflare",
+      "companyLogo": "",
+      "description": "Design intuitive interfaces for security and performance products used across the web.",
+      "requirements": [
+        "Strong frontend product experience",
+        "Comfort with complex domain concepts",
+        "Excellent UI communication"
+      ],
+      "responsibilities": [
+        "Build security product interfaces",
+        "Clarify complex workflows",
+        "Work across platform teams"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$160k-$210k",
+      "salaryMin": 160000,
+      "salaryMax": 210000,
+      "tags": [
+        "security",
+        "frontend",
+        "platform"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-18T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-12T20:07:32.532Z",
+      "updatedAt": "2026-02-12T20:07:32.532Z"
+    },
+    {
+      "_id": "11f4d109-7788-4f84-9620-ea30e5fb0594",
+      "title": "Product UI Engineer",
+      "company": "Pitch",
+      "companyLogo": "",
+      "description": "Build collaborative presentation workflows with a strong eye for interaction design.",
+      "requirements": [
+        "Strong UI craft",
+        "React experience",
+        "Interest in collaborative products"
+      ],
+      "responsibilities": [
+        "Implement polished interactions",
+        "Work with designers closely",
+        "Raise product quality bar"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$125k-$165k",
+      "salaryMin": 125000,
+      "salaryMax": 165000,
+      "tags": [
+        "ui",
+        "collaboration",
+        "react"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-11T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-10T20:07:32.532Z",
+      "updatedAt": "2026-02-10T20:07:32.532Z"
+    },
+    {
+      "_id": "110e1629-21bd-4084-8109-c5941c556f3a",
+      "title": "Senior Software Engineer, Frontend",
+      "company": "Asana",
+      "companyLogo": "",
+      "description": "Build sophisticated workflows for planning and execution across distributed organizations.",
+      "requirements": [
+        "React at scale",
+        "Strong product ownership",
+        "Good collaboration habits"
+      ],
+      "responsibilities": [
+        "Own product areas",
+        "Improve performance and UX",
+        "Partner across functions"
+      ],
+      "location": "San Francisco, CA",
+      "type": "Hybrid",
+      "salary": "$165k-$215k",
+      "salaryMin": 165000,
+      "salaryMax": 215000,
+      "tags": [
+        "product",
+        "frontend",
+        "saas"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-17T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-08T20:07:32.532Z",
+      "updatedAt": "2026-02-08T20:07:32.532Z"
+    },
+    {
+      "_id": "91592290-30e6-4b50-93f5-4b7651f17784",
+      "title": "Frontend Engineer, Onboarding",
+      "company": "Ramp",
+      "companyLogo": "",
+      "description": "Make onboarding and activation smoother for finance teams adopting modern tooling.",
+      "requirements": [
+        "Strong product focus",
+        "Experimentation experience",
+        "React and API integration skills"
+      ],
+      "responsibilities": [
+        "Improve signup journeys",
+        "Run onboarding experiments",
+        "Build resilient UI flows"
+      ],
+      "location": "New York, NY",
+      "type": "Full-time",
+      "salary": "$155k-$200k",
+      "salaryMin": 155000,
+      "salaryMax": 200000,
+      "tags": [
+        "fintech",
+        "onboarding",
+        "react"
+      ],
+      "experience": "Mid Level",
+      "deadline": "2026-04-09T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-06T20:07:32.532Z",
+      "updatedAt": "2026-02-06T20:07:32.532Z"
+    },
+    {
+      "_id": "2eb338cc-8ef1-4f56-a0f4-4c3813d15be1",
+      "title": "Principal Frontend Engineer",
+      "company": "Slack",
+      "companyLogo": "",
+      "description": "Drive the future of real-time collaboration experiences across a massive product surface.",
+      "requirements": [
+        "Principal-level frontend leadership",
+        "Architecture at scale",
+        "Mentorship and influence"
+      ],
+      "responsibilities": [
+        "Set frontend direction",
+        "Guide architecture decisions",
+        "Influence cross-org product quality"
+      ],
+      "location": "Remote",
+      "type": "Remote",
+      "salary": "$210k-$280k",
+      "salaryMin": 210000,
+      "salaryMax": 280000,
+      "tags": [
+        "principal",
+        "collaboration",
+        "frontend"
+      ],
+      "experience": "Executive",
+      "deadline": "2026-04-28T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": true,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-04T20:07:32.532Z",
+      "updatedAt": "2026-02-04T20:07:32.532Z"
+    },
+    {
+      "_id": "2da932ce-3583-4d98-8ab1-8dc6f71c1485",
+      "title": "Senior Frontend Engineer, Creator Tools",
+      "company": "Patreon",
+      "companyLogo": "",
+      "description": "Help creators manage communities, memberships, and monetization with powerful product tools.",
+      "requirements": [
+        "Strong React product experience",
+        "Empathy for creators",
+        "Good design collaboration"
+      ],
+      "responsibilities": [
+        "Build creator dashboards",
+        "Improve monetization workflows",
+        "Ship polished UI systems"
+      ],
+      "location": "Remote",
+      "type": "Full-time",
+      "salary": "$145k-$190k",
+      "salaryMin": 145000,
+      "salaryMax": 190000,
+      "tags": [
+        "creator-tools",
+        "react",
+        "dashboard"
+      ],
+      "experience": "Senior Level",
+      "deadline": "2026-04-19T19:07:32.532Z",
+      "isActive": true,
+      "isFeatured": false,
+      "postedBy": "4b332beb-e947-47c9-a06a-6574f822ae62",
+      "applicantCount": 0,
+      "viewCount": 0,
+      "createdAt": "2026-02-02T20:07:32.532Z",
+      "updatedAt": "2026-02-02T20:07:32.532Z"
+    }
+  ]
+}
