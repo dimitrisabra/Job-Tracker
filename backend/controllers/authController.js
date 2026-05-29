@@ -9,8 +9,14 @@ const {
   setUserLastLogin,
 } = require('../utils/devStore');
 
-const signToken = (userId) =>
-  jwt.sign({ id: userId }, process.env.JWT_SECRET, {
+const signToken = (user) =>
+  jwt.sign({
+    id: user._id,
+    email: user.email,
+    name: user.name,
+    role: user.role,
+    status: user.status,
+  }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES_IN || '7d',
   });
 
@@ -34,7 +40,7 @@ const signup = async (req, res, next) => {
       ipAddress: req.ip,
     });
 
-    const token = signToken(user._id);
+    const token = signToken(user);
 
     res.status(201).json({
       message: 'Account created successfully!',
@@ -77,7 +83,7 @@ const login = async (req, res, next) => {
       ipAddress: req.ip,
     });
 
-    const token = signToken(user._id);
+    const token = signToken(updatedUser || user);
 
     res.json({
       message: 'Login successful!',

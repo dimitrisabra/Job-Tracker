@@ -466,6 +466,21 @@ function createId() {
   return crypto.randomUUID();
 }
 
+function stableId(value) {
+  const hash = crypto
+    .createHash('sha256')
+    .update(`job-tracker:${value}`)
+    .digest('hex');
+
+  return [
+    hash.slice(0, 8),
+    hash.slice(8, 12),
+    hash.slice(12, 16),
+    hash.slice(16, 20),
+    hash.slice(20, 32),
+  ].join('-');
+}
+
 function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
@@ -575,7 +590,7 @@ function buildSamplePostings(adminId) {
   return SAMPLE_POSTINGS.map((posting, index) => {
     const createdAt = dateDaysAgo(index * 2 + 2);
     return {
-      _id: createId(),
+      _id: stableId(`posting:${posting.company}:${posting.title}`),
       title: posting.title,
       company: posting.company,
       companyLogo: '',
@@ -610,9 +625,9 @@ function getJobStatusCounts(jobs) {
 }
 
 async function buildSeedData() {
-  const adminId = createId();
-  const alexId = createId();
-  const sarahId = createId();
+  const adminId = stableId('user:admin@jobtracker.com');
+  const alexId = stableId('user:alex@example.com');
+  const sarahId = stableId('user:sarah@example.com');
 
   const users = [
     {
@@ -657,7 +672,7 @@ async function buildSeedData() {
   const jobs = SAMPLE_JOBS.map((job, index) => {
     const appliedAt = dateDaysAgo(dayOffsets[index]);
     return {
-      _id: createId(),
+      _id: stableId(`job:${alexId}:${job.company}:${job.jobTitle}`),
       user: alexId,
       jobPosting: null,
       ...job,
@@ -676,7 +691,7 @@ async function buildSeedData() {
     SECOND_USER_JOBS.map((job, index) => {
       const appliedAt = dateDaysAgo(index * 9 + 6);
       return {
-        _id: createId(),
+        _id: stableId(`job:${sarahId}:${job.company}:${job.jobTitle}`),
         user: sarahId,
         jobPosting: null,
         ...job,
@@ -697,12 +712,12 @@ async function buildSeedData() {
   const jobPostings = buildSamplePostings(adminId);
 
   const activityLogs = [
-    { _id: createId(), user: alexId, action: 'SIGNUP', description: 'Account created', meta: {}, ipAddress: '', createdAt: dateDaysAgo(75), updatedAt: dateDaysAgo(75) },
-    { _id: createId(), user: alexId, action: 'LOGIN', description: 'User logged in', meta: {}, ipAddress: '', createdAt: dateDaysAgo(74), updatedAt: dateDaysAgo(74) },
-    { _id: createId(), user: alexId, action: 'JOB_CREATED', description: 'Applied to Senior Frontend Engineer at Stripe', meta: {}, ipAddress: '', createdAt: dateDaysAgo(70), updatedAt: dateDaysAgo(70) },
-    { _id: createId(), user: alexId, action: 'STATUS_CHANGED', description: 'Frontend Lead at Figma: Applied -> Interview', meta: {}, ipAddress: '', createdAt: dateDaysAgo(10), updatedAt: dateDaysAgo(10) },
-    { _id: createId(), user: sarahId, action: 'SIGNUP', description: 'Account created', meta: {}, ipAddress: '', createdAt: dateDaysAgo(42), updatedAt: dateDaysAgo(42) },
-    { _id: createId(), user: adminId, action: 'POSTING_CREATED', description: 'Admin posted job: Senior Frontend Engineer at Stripe', meta: {}, ipAddress: '', createdAt: dateDaysAgo(2), updatedAt: dateDaysAgo(2) },
+    { _id: stableId('activity:alex:signup'), user: alexId, action: 'SIGNUP', description: 'Account created', meta: {}, ipAddress: '', createdAt: dateDaysAgo(75), updatedAt: dateDaysAgo(75) },
+    { _id: stableId('activity:alex:login'), user: alexId, action: 'LOGIN', description: 'User logged in', meta: {}, ipAddress: '', createdAt: dateDaysAgo(74), updatedAt: dateDaysAgo(74) },
+    { _id: stableId('activity:alex:first-job'), user: alexId, action: 'JOB_CREATED', description: 'Applied to Senior Frontend Engineer at Stripe', meta: {}, ipAddress: '', createdAt: dateDaysAgo(70), updatedAt: dateDaysAgo(70) },
+    { _id: stableId('activity:alex:status-change'), user: alexId, action: 'STATUS_CHANGED', description: 'Frontend Lead at Figma: Applied -> Interview', meta: {}, ipAddress: '', createdAt: dateDaysAgo(10), updatedAt: dateDaysAgo(10) },
+    { _id: stableId('activity:sarah:signup'), user: sarahId, action: 'SIGNUP', description: 'Account created', meta: {}, ipAddress: '', createdAt: dateDaysAgo(42), updatedAt: dateDaysAgo(42) },
+    { _id: stableId('activity:admin:first-posting'), user: adminId, action: 'POSTING_CREATED', description: 'Admin posted job: Senior Frontend Engineer at Stripe', meta: {}, ipAddress: '', createdAt: dateDaysAgo(2), updatedAt: dateDaysAgo(2) },
   ];
 
   return { users, jobs, activityLogs, jobPostings };
@@ -758,10 +773,37 @@ async function createUser({ name, email, password, role = 'user', status = 'acti
 
   const timestamp = nowIso();
   const user = {
-    _id: createId(),
+    _id: stableId(`user:${normalizedEmail}`),
     name,
     email: normalizedEmail,
     password: await bcrypt.hash(password, 12),
+    role,
+    status,
+    avatar: '',
+    lastLogin: null,
+    createdAt: timestamp,
+    updatedAt: timestamp,
+  };
+
+  data.users.push(user);
+  writeData(data);
+  return sanitizeUser(user);
+}
+
+function restoreSessionUser({ id, email, name, role = 'user', status = 'active' }) {
+  const normalizedEmail = String(email || '').toLowerCase();
+  if (!normalizedEmail) return null;
+
+  const data = readData();
+  const existing = data.users.find((user) => user._id === id || user.email === normalizedEmail);
+  if (existing) return sanitizeUser(existing);
+
+  const timestamp = nowIso();
+  const user = {
+    _id: id || stableId(`user:${normalizedEmail}`),
+    name: name || normalizedEmail.split('@')[0],
+    email: normalizedEmail,
+    password: '',
     role,
     status,
     avatar: '',
@@ -1288,6 +1330,7 @@ module.exports = {
   getUserById,
   getUserByEmail,
   createUser,
+  restoreSessionUser,
   updateUserProfile,
   updateUserPassword,
   setUserLastLogin,

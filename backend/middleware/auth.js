@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { getUserById } = require('../utils/devStore');
+const { getUserByEmail, getUserById, restoreSessionUser } = require('../utils/devStore');
 
 const protect = async (req, res, next) => {
   try {
@@ -14,7 +14,9 @@ const protect = async (req, res, next) => {
     }
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const user = getUserById(decoded.id);
+    const user = getUserById(decoded.id)
+      || getUserByEmail(decoded.email)
+      || restoreSessionUser(decoded);
 
     if (!user) {
       return res.status(401).json({ message: 'User no longer exists.' });
