@@ -48,6 +48,25 @@ app.use(cors((req, callback) => {
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
+let storeReady;
+
+function ensureStoreReady() {
+  if (!storeReady) {
+    storeReady = initStore();
+  }
+
+  return storeReady;
+}
+
+app.use(async (req, res, next) => {
+  try {
+    await ensureStoreReady();
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
+
 const LOCAL_HOST_MARKERS = ['127.0.0.1', '::1', '::ffff:127.0.0.1', 'localhost'];
 
 function isLocalRequest(req) {
@@ -102,7 +121,7 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 
 async function startServer() {
-  await initStore();
+  await ensureStoreReady();
 
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
@@ -112,9 +131,11 @@ async function startServer() {
   });
 }
 
-startServer().catch((error) => {
-  console.error('Startup error:', error.message);
-  process.exit(1);
-});
+if (require.main === module) {
+  startServer().catch((error) => {
+    console.error('Startup error:', error.message);
+    process.exit(1);
+  });
+}
 
 module.exports = app;
